@@ -4,8 +4,11 @@
     <script>
     function rollDice(){
          var randomPage = pages[Math.floor(Math.random() * pages.length)];
-         document.getElementById('frame').src = "http://" + randomPage;
-         document.getElementById('url').innerHTML = "http://" + randomPage;
+         document.getElementById('frame').src = "https://" + randomPage;
+         var httplink = "http://" + randomPage;
+         var urlelement = document.getElementById('url');
+         urlelement.innerHTML = httplink;
+         urlelement.href = httplink;
     }
 
     var loadJS = function(url, implementationCode, location){
@@ -27,9 +30,10 @@
 </head>
     <body>
         <b>Contact Russia!</b> <button onclick="rollDice()" style="float: right;">↻ Try another ↺</button></br>
-        <p style="font-size:x-small;">Russian websites with web forms, telephone numbers, email adresses and other types of public contact info.</p>
-        <iframe id="frame" width="100%" height="90%"></iframe>
-        <p id="url"></p>
+	<p style="font-size:small;">Russian websites with web forms, telephone numbers, email adresses and other types of public contact info. </br>
+	If content does not load try http link: <a target="_blank" id="url"></p>
+	</p>
+	<iframe id="frame" width="100%" height="90%"></iframe></br>
         <a href="https://github.com/contactrussia/contactrussia">Github</a>
     </body>
 </html>
