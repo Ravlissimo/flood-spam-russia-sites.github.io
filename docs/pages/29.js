@@ -326,7 +326,7 @@ pages = [
   "xn--46-6kcanl2bl4a.xn--p1ai/about",
   "xn--80ahdilkq.xn--p1ai/dezinfektsiya",
   "xn--80aaelqbsneh.xn--p1ai/tarify.html",
-  "xn-----flcfvbb5bc3ai1b3a5c.xn--p1ai/пансионат_"ЛАРИМАР"1",
+  "xn-----flcfvbb5bc3ai1b3a5c.xn--p1ai/пансионат_\"ЛАРИМАР\"1",
   "xn--80abgj7akbtq6h.xn--p1ai/list.php",
   "xn--e1aaalarkzkk4f.xn--p1ai/list.php",
   "xn--g1ahx.xn--p1ai/garage",
