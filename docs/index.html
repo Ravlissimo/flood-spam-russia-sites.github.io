@@ -7,8 +7,10 @@
          document.getElementById('frame').src = "https://" + randomPage;
          var httplink = "http://" + randomPage;
          var urlelement = document.getElementById('url');
+         var buttonformelement = document.getElementById('buttonform');
          urlelement.innerHTML = httplink;
          urlelement.href = httplink;
+	 buttonformelement.action = httplink;
     }
 
     var loadJS = function(url, implementationCode, location){
@@ -29,12 +31,25 @@
     </script>
 </head>
     <body>
-        <b>Support Ukraine! Contact Russia!</b> <button onclick="rollDice()" style="float: right;">↻ Try another ↺</button></br>
-	<p style="font-size:small;">Russian websites with web forms, telephone numbers, email adresses and other types of public contact info.
+        <b>Support Ukraine! Contact Russia!</b></br>
+	<p >Russian websites with web forms, telephone numbers, email adresses and other types of public contact info.  718 thousand links to contact! Full list at: <a href="https://github.com/contactrussia/contactrussia">Github</a> and <a href="https://gitlab.com/contact572/contactrussia">Gitlab (mirror)</a>
 	</p>
-	<p style="font-size:large;">If content does not load try http link: <b>⇉⇉⇉⇉⇉⇉⇉⇉⇉⇉⇉⇉ <a target="_blank" id="url"></a> ⇇⇇⇇⇇⇇⇇⇇⇇⇇⇇⇇⇇⇇</b>
+
+	<hr>
+	<br>
+	<br>
+	<p style="font-size:large;">Here is a random one: <b> <a style="font-size: 20px" target="_blank" id="url"></a> </b></br>
+	</p>
+	<p>
+
+	      <form id="buttonform" method="get" target="_blank">
+	<button style="float: right; font-size: 30px; height: 4em" type="submit">Open in new window</button>
+	      </form>
+	<button onclick="rollDice()" style="font-size: 30px; height: 4em">↻ Try another ↺</button>
+	</p>
+	<p>
+	Iframe preview bellow(does not work for all pages):
 	</p>
 	<iframe id="frame" width="100%" height="90%"></iframe></br>
-        718 thousand links to contact! <a href="https://github.com/contactrussia/contactrussia">Github</a> <a href="https://gitlab.com/contact572/contactrussia">Gitlab (mirror)</a>
     </body>
 </html>
